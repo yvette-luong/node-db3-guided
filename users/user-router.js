@@ -36,7 +36,12 @@ router.get("/:id", (req, res) => {
 // get all posts by a particular user id
 router.get('/:id/posts', (req, res) => {
   User.findPosts(req.params.id)
-    .then()
+    .then(posts => {
+
+    })
+    .catch(err => {
+      res.json({ error: err.message })
+    })
 })
 
 router.post("/", (req, res) => {
