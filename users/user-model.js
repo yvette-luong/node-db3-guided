@@ -1,7 +1,7 @@
 // user-model
 const db = require("../data/db-config.js");
 
-module.export = {
+module.exports = {
   findPosts() {
     console.log('wired')
   }
