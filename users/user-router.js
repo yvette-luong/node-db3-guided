@@ -34,7 +34,7 @@ router.get("/:id", (req, res) => {
 });
 
 router.get('/:id/posts', (req, res) => {
-  res.json('does somethign')
+  User.findPosts()
 })
 
 router.post("/", (req, res) => {
